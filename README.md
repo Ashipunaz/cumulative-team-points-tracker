@@ -2,16 +2,12 @@
 
 A Streamlit web application for visualizing and comparing team performances throughout an EPL (English Premier League) season. Track cumulative points progression and compare multiple teams with customizable visualizations.
 
-![Python](https://img.shields.io/badge/python-3.8+-blue.svg)
-![Streamlit](https://img.shields.io/badge/streamlit-1.28+-red.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
-
 ## 📋 Features
 
 - **CSV Upload**: Upload your EPL season match data
 - **Two-Team Comparison**: Compare any two teams with customizable colors
 - **Multi-Team Analysis**: Compare up to 6 teams simultaneously
-- **Interactive Visualizations**: Beautiful line charts with matplotlib
+- **Visualizations**: Beautiful line charts with matplotlib
 - **Statistics Dashboard**: View final points and point differences
 - **Custom Color Selection**: Choose your own team colors for better visualization
 
@@ -26,8 +22,8 @@ A Streamlit web application for visualizing and comparing team performances thro
 
 1. **Clone the repository** (or download the files)
 ```bash
-git clone https://github.com/yourusername/epl-points-tracker.git
-cd epl-points-tracker
+git https://github.com/Ashipunaz/cumulative-team-points-tracker.git
+cd points-tracker-app
 ```
 
 2. **Install required packages**
@@ -86,25 +82,13 @@ Tottenham,Burnley,3,0
 - Select **Team 2** from the second dropdown
 - Pick a color for Team 2
 - View the comparison chart showing cumulative points over gameweeks
-- Check the statistics summary for final points and differences
+- Check the statistics summary for current/final points and differences
 
 ### 3. Multi-Team Comparison
 - Scroll to the "Multi-Team Comparison" section
 - Select up to 6 teams from the multiselect dropdown
 - Customize the color for each selected team
 - View all teams on a single chart for comprehensive analysis
-
-## 📁 Project Structure
-
-```
-epl-points-tracker/
-│
-├── app.py                 # Main Streamlit application
-├── requirements.txt       # Python dependencies
-├── README.md             # This file
-└── sample_data/          # (Optional) Sample CSV files
-    └── epl_25_26.csv
-```
 
 ## 🛠️ Technical Details
 
@@ -120,7 +104,7 @@ numpy>=1.24.0
 ### Key Functions
 
 - `process_team_points(data)`: Processes match data and calculates cumulative points
-- `create_comparison_chart()`: Generates matplotlib visualization for two teams
+- `create_comparison_chart()`: Generates matplotlib visualization for two or more teams
 
 ### Data Processing Logic
 
@@ -142,27 +126,6 @@ Points are accumulated cumulatively from gameweek 0 (0 points) to the final game
 ### Multi-Team Analysis
 ![Multi-Team Chart](screenshots/multi-team.png)
 
-## 🤝 Contributing
-
-Contributions are welcome! Here's how you can help:
-
-1. Fork the repository
-2. Create a new branch (`git checkout -b feature/improvement`)
-3. Make your changes
-4. Commit your changes (`git commit -am 'Add new feature'`)
-5. Push to the branch (`git push origin feature/improvement`)
-6. Create a Pull Request
-
-## 📝 To-Do / Future Enhancements
-
-- [ ] Add league table standings view
-- [ ] Include form guide (last 5 matches)
-- [ ] Season-over-season comparison
-- [ ] Export charts as PNG/PDF
-- [ ] Add goals scored/conceded tracking
-- [ ] Mobile-responsive design improvements
-- [ ] Dark mode toggle
-
 ## 🐛 Known Issues
 
 - Very large CSV files (10,000+ rows) may take longer to process
@@ -174,29 +137,16 @@ Contributions are welcome! Here's how you can help:
 2. **Gameweek Display**: X-axis always shows integer gameweeks for clarity
 3. **Performance**: For best performance, ensure your CSV has clean data with no missing values in required columns
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 👨‍💻 Author
 
 Your Name
-- GitHub: [@yourusername](https://github.com/yourusername)
-- Email: your.email@example.com
+- GitHub: [Ashipunaz](https://github.com/Ashipunaz)
+- Email: ayubu.oseko@gmail.com
 
 ## 🙏 Acknowledgments
 
-- Data format based on [Football-Data.co.uk](https://www.football-data.co.uk/)
+- Data for this project was obtaine from [Football-Data.co.uk](https://www.football-data.co.uk/)
 - Built with [Streamlit](https://streamlit.io/)
 - Visualization powered by [Matplotlib](https://matplotlib.org/)
-
-## 📞 Support
-
-If you encounter any issues or have questions:
-1. Check the [Issues](https://github.com/yourusername/epl-points-tracker/issues) page
-2. Create a new issue with details about your problem
-3. Contact me at your.email@example.com
-
----
 
 **Enjoy tracking your favorite teams! ⚽📊**
