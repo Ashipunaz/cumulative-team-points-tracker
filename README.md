@@ -145,7 +145,7 @@ Your Name
 
 ## 🙏 Acknowledgments
 
-- Data for this project was obtaine from [Football-Data.co.uk](https://www.football-data.co.uk/)
+- Data for this project was obtained from [Football-Data.co.uk](https://www.football-data.co.uk/)
 - Built with [Streamlit](https://streamlit.io/)
 - Visualization powered by [Matplotlib](https://matplotlib.org/)
 
